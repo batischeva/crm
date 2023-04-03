@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400;1,600&display=swap');
+
+/* Нормализация */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: 300;
+  font-size: inherit;
+}
+h1 {
+  font-size: 36px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+}
+#root {
+  height: 100%;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Шапка */
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.header-logo-img {
+  max-width: 50px;
+}
+
+.header-org-logo a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #000;
+}
+
+.header-user-logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-menu-list {
+  position: absolute;
+  top: 70px; /*сделать нормальное позиционирование относительно шапки*/
+  right: 0;
+  padding: 20px;
+  background-color: #403F4E;
+  min-width: 120px;
+  text-align: left;
+
+  /*сделать отображение меню при наведении на лого юзера*/
+  transform: translate(0px, 10%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease 0s;
+}
+
+.header-menu-first-item {
+  padding-bottom: 20px;
+  color: #DEDEDE;
+}
+
+.header-menu-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-icon {
+  margin-right: 10px;
+}
+
+/* Основное содержимое */
+
+.workspace {
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  width: 80%;
+  flex-direction: column;
+}
+
+.main {
+  padding: 40px;
+  min-width: 100%;
+}
+
+.main h1 {
+  margin-bottom: 40px;
+}
+
+.widget-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.widget {
+  min-width: 250px;
+  min-height: 120px;
+  padding: 10px 20px;
+  background-image: url(img/widget.svg);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.filter-desc {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  user-select: none;
+}
+
+.filter-count {
+  font-size: 48px;
+  color: #55A3FF;
+}
+
+/* Подвал */
+
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #403F4E;
+  color: #DEDEDE;
+}

@@ -1,0 +1,8 @@
+export const AUTH_ROUTE = '/auth'
+export const LAYOUT_ROUTE = '/'
+export const DEALS_ROUTE = '/deals'
+export const ORG_ROUTE = '/org'
+export const USERS_ROUTE = '/users'
+export const PRODUCTS_ROUTE = '/products'
+export const ANALITICS_ROUTE = '/analitics'
+export const SETTINGS_ROUTE = '/settings'

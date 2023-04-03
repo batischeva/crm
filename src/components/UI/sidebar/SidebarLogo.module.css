@@ -1,0 +1,13 @@
+.sidebarLogoBlock {
+  padding: 50px 0px;
+  text-align: center;
+}
+.sidebarLogoLink {
+  font-size: 28px;
+  font-weight: 300;
+  font-style: italic;
+}
+.sidebarLogoLinkAccent {
+  color: #55A3FF;
+  font-weight: 600;
+}
